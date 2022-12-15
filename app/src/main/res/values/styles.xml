@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GridImageButton">
+        <item name="android:onClick">gridButtonsClicked</item>
+        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="srcCompat">@drawable/grid_white</item>
+    </style>
+    <style name="MarkChoiceBTNs">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="backgroundTint">@color/black</item>
+        <item name="android:onClick">userMarkChoiceClicked</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+
+    </style>
+    <style name="FirstActivityButtons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:backgroundTint">@color/ic_launcher_background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

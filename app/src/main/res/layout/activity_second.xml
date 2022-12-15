@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkGray"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/chooseMarkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/choose_your_mark"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonO"
+            style="@style/MarkChoiceBTNs"
+            android:src="@drawable/o_mark"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imageButtonX"
+            style="@style/MarkChoiceBTNs"
+            android:src="@drawable/x_mark"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <ImageButton
+            android:id="@+id/imgBtn0"
+            style="@style/GridImageButton"
+            android:tag="0"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn1"
+            style="@style/GridImageButton"
+            android:tag="1"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn2"
+            style="@style/GridImageButton"
+            android:tag="2"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn3"
+            style="@style/GridImageButton"
+            android:tag="3"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn4"
+            style="@style/GridImageButton"
+            android:tag="4"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn5"
+            style="@style/GridImageButton"
+            android:tag="5"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn6"
+            style="@style/GridImageButton"
+            android:tag="6"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn7"
+            style="@style/GridImageButton"
+            android:tag="7"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/imgBtn8"
+            style="@style/GridImageButton"
+            android:tag="8"
+            tools:ignore="ContentDescription" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:text=""
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/resetGameBtn"
+        android:onClick="resetGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/reset_game"
+        tools:ignore="OnClick,UsingOnClickInXml" />
+
+</LinearLayout>
+</ScrollView>

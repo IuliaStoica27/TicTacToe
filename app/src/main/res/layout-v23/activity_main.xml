@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/welcome_to_tic_tac_toe"
+            android:textColor="#967E36"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/playGameButton"
+            style="@style/FirstActivityButtons"
+            android:onClick="playGameBtnClicked"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:text="@string/play_game"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/aboutGameButton"
+            style="@style/FirstActivityButtons"
+            android:onClick="aboutGameBtnClicked"
+            android:text="@string/about_game"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/aboutGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="44dp"
+            android:padding="16dp"
+            android:text=""
+            android:textColor="#967E36" />
+    </LinearLayout>
+</ScrollView>
